@@ -3,7 +3,7 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center flex-grow text-center px-4 gap-4">
       <h1 className="text-4xl font-bold mb-4 text-neutral-800">Welcome to my site</h1>
       <p className="text-neutral-600 max-w-prose">
-        I'm Egidijus — a software engineer who enjoys diving into the different layers of the software atmosphere through the projects I build.
+        This is for a little insight into me and to showcase what I have done.
       </p>
       <div className="flex space-x-4 mt-4">
         <a href="/about"
