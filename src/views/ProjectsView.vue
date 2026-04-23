@@ -1,57 +1,39 @@
 <script setup lang="ts">
 import ProjectCard from "@/components/ProjectCard.vue";
-import type { Project } from "@/types";
-
-const projects: Project[] = [
-  {
-    id: 1,
-    slug: "bruh",
-    title: "bruh-the-title",
-    description: "description",
-    tags: ["AI", "ML"],
-    date: "date",
-    repo: null,
-    demo: null,
-    published: true,
-  },
-  {
-    id: 2,
-    slug: "bruh2",
-    title: "bruh-the-title2",
-    description: "description",
-    tags: ["AI"],
-    date: "date",
-    repo: null,
-    demo: null,
-    published: true,
-  },
-];
+import { projects } from "@/data/projects";
 </script>
 
 <template>
-  <section class="px-4 py-10 max-w-5xl mx-auto w-full">
-    <div class="mb-8">
-      <h2 class="text-3xl font-bold mb-2 text-neutral-800">Projects</h2>
-      <p class="text-neutral-600">
-        A collection of things I've built to learn and solve problems.
-      </p>
-    </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <ProjectCard
-        v-for="project in projects"
-        :key="project.id"
-        :title="project.title"
-        :description="project.description"
-        :tags="project.tags"
-      />
-    </div>
-    <div class="mt-12">
+  <section class="flex flex-col items-center justify-center grow px-4 py-16">
+    <div class="flex flex-col gap-10 w-full max-w-2xl">
       <RouterLink
         to="/"
-        class="text-green-500 hover:text-green-600 font-medium hover:underline"
+        class="text-pine hover:text-moss font-medium hover:underline"
       >
         &larr; Back to Home
       </RouterLink>
+
+      <div class="flex flex-col gap-4">
+        <p class="italic font-caveat text-xl text-moss">- P R O J E C T S</p>
+        <h1 class="text-6xl font-bold text-ink">Things I've built.</h1>
+        <p class="text-muted text-lg max-w-prose">
+          Small tools, experiments and side projects. Click any for detail.
+        </p>
+      </div>
+
+      <hr class="border-line" />
+
+      <div class="flex flex-col gap-6">
+        <ProjectCard
+          v-for="project in projects"
+          :key="project.id"
+          :slug="project.slug"
+          :title="project.title"
+          :description="project.description"
+          :tags="project.tags"
+          :date="project.date"
+        />
+      </div>
     </div>
   </section>
 </template>

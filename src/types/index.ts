@@ -5,7 +5,8 @@ export interface Project {
   description: string;
   tags: string[];
   date: string;
-  repo: URL | null;
-  demo: URL | null;
+  repo: string | null;
+  demo: string | null;
   published: boolean;
+  content?: string;
 }
