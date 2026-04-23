@@ -4,24 +4,27 @@ import { RouterLink } from "vue-router";
 
 <template>
   <section
-    class="flex flex-col items-center justify-center grow text-center px-4 gap-4"
+    class="flex flex-col items-center justify-center grow text-center px-4 gap-12"
   >
-    <h1 class="text-4xl font-bold mb-4 text-neutral-800">Welcome to my site</h1>
-    <p class="text-neutral-600 max-w-prose">
-      This is for a little insight into me and to showcase what I have done.
-    </p>
-    <div class="flex space-x-4 mt-4">
+    <div class="flex flex-col gap-4">
+      <p class="italic font-caveat text-xl text-moss">hey -</p>
+      <h1 class="text-6xl font-bold text-ink">I'm <span class="text-pine">Egidijus</span>.</h1>
+      <p class="text-muted max-w-prose text-lg">
+        Software engineer, wandering the layers of the stack.
+      </p>
+    </div>
+    <div class="flex space-x-4">
       <RouterLink
         to="/about"
-        class="px-4 py-2 rounded-lg bg-green-500 text-white font-medium shadow-md hover:bg-green-600 transition"
+        class="px-4 py-2 rounded-lg bg-pine text-white font-medium hover:opacity-90 transition"
       >
-        Learn more about me
+        about me
       </RouterLink>
       <RouterLink
         to="/projects"
-        class="px-4 py-2 rounded-lg border border-green-500 text-green-500 font-medium hover:bg-green-50 transition"
+        class="px-4 py-2 rounded-lg border-2 border-moss text-moss font-medium hover:bg-moss-soft transition"
       >
-        View my projects
+        projects →
       </RouterLink>
     </div>
   </section>

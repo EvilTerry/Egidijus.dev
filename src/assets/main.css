@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-pine: oklch(0.42 0.08 150); /* Primary accent */
+  --color-moss: oklch(0.58 0.09 140); /* small labels */
+  --color-moss-soft: oklch(0.58 0.09 140 / 0.15); /* tag pills */
+  --color-paper: #fafaf7; /* background */
+  --color-cream: #f4f1ea; /* placeholder background */
+  --color-ink: #171a17; /* body text */
+  --color-muted: #737373; /* secondary/meta text */
+  --color-line: #e5e5e5; /* borders and dividers */
+  --color-white: #ffffff; /* cards */
+
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono Variable", monospace;
+  --font-caveat: "Caveat", cursive;
+}
