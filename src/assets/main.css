@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4 {
+  color: var(--color-moss);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.markdown h1 { font-size: 1.5rem; }
+.markdown h2 { font-size: 1.25rem; }
+.markdown h3 { font-size: 1.1rem; }
+.markdown img { width: 100%; border-radius: 0.75rem; margin-bottom: 1rem; object-fit: cover; }
+.markdown p { color: var(--color-muted); margin-bottom: 0.75rem; line-height: 1.7; }
+.markdown ul, .markdown ol { color: var(--color-muted); padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.markdown ul { list-style-type: disc; }
+.markdown ol { list-style-type: decimal; }
+.markdown li { margin-bottom: 0.25rem; line-height: 1.7; }
+.markdown a { color: var(--color-moss); text-decoration: underline; }
+.markdown code { font-family: var(--font-mono); font-size: 0.875rem; background: var(--color-cream); padding: 0.1rem 0.35rem; border-radius: 0.25rem; }
+.markdown pre { background: var(--color-cream); padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.markdown pre code { background: none; padding: 0; }
+.markdown img { max-height: 480px; }
+.markdown hr { border-color: var(--color-line); margin: 1.5rem 0; }
+.markdown blockquote { border-left: 3px solid var(--color-moss); padding-left: 1rem; color: var(--color-muted); font-style: italic; margin-bottom: 0.75rem; }
+.markdown table { width: 100%; border-collapse: collapse; margin-bottom: 0.75rem; font-size: 0.875rem; }
+.markdown th { text-align: left; color: var(--color-ink); font-weight: 600; padding: 0.5rem 0.75rem; border-bottom: 2px solid var(--color-line); }
+.markdown td { color: var(--color-muted); padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--color-line); }
+
+@theme {
+  --color-*: initial;
+  --color-pine: oklch(0.42 0.08 150); /* Primary accent */
+  --color-moss: oklch(0.58 0.09 140); /* small labels */
+  --color-moss-soft: oklch(0.58 0.09 140 / 0.15); /* tag pills */
+  --color-paper: #fafaf7; /* background */
+  --color-cream: #f4f1ea; /* placeholder background */
+  --color-ink: #171a17; /* body text */
+  --color-muted: #737373; /* secondary/meta text */
+  --color-line: #e5e5e5; /* borders and dividers */
+  --color-white: #ffffff; /* cards */
+
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono Variable", monospace;
+  --font-caveat: "Caveat", cursive;
+}
