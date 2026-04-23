@@ -8,7 +8,7 @@ import Footer from "@/components/Footer.vue"
     class="flex flex-col items-center justify-center grow text-center px-4 gap-12"
   >
     <div class="flex flex-col gap-4">
-      <p class="italic font-caveat text-xl text-moss">hey -</p>
+      <p class="italic font-caveat text-xl text-moss">- hey</p>
       <h1 class="text-6xl font-bold text-ink">I'm <span class="text-pine">Egidijus</span>.</h1>
       <p class="text-muted max-w-prose text-lg">
         Software engineer, wandering the layers of the stack.

@@ -58,6 +58,13 @@
         </div>
       </div>
 
+      <RouterLink
+        to="/"
+        class="text-pine hover:text-moss font-medium hover:underline"
+      >
+        &larr; Back to Home
+      </RouterLink>
+
     </div>
   </section>
 </template>
