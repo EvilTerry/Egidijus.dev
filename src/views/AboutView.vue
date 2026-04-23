@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import GithubIcon from "@/assets/github.svg?component";
+import LinkedinIcon from "@/assets/linkedin.svg?component";
+import ResumeIcon from "@/assets/resume.svg?component";
+</script>
+
 <template>
   <section class="flex flex-col items-center justify-center grow px-4 py-16">
     <div class="flex flex-col gap-10 w-full max-w-2xl">
@@ -42,19 +48,19 @@
             href="https://github.com/EvilTerry"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-4 py-2 rounded-lg border border-moss text-moss hover:bg-moss-soft transition text-sm font-medium"
-          >GitHub</a>
+            class="flex items-center gap-2 px-4 py-2 rounded-lg border border-moss text-moss hover:bg-moss-soft transition text-sm font-medium"
+          ><GithubIcon />GitHub</a>
           <a
             href="https://www.linkedin.com/in/egidijus-ukrinas-203800242/"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-4 py-2 rounded-lg border border-moss text-moss hover:bg-moss-soft transition text-sm font-medium"
-          >LinkedIn</a>
+            class="flex items-center gap-2 px-4 py-2 rounded-lg border border-moss text-moss hover:bg-moss-soft transition text-sm font-medium"
+          ><LinkedinIcon />LinkedIn</a>
           <a
             href="#"
-            class="px-4 py-2 rounded-lg border border-line text-muted cursor-not-allowed text-sm font-medium"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg border border-line text-muted cursor-not-allowed text-sm font-medium"
             title="Resume coming soon"
-          >Resume</a>
+          ><ResumeIcon />Resume</a>
         </div>
       </div>
 
